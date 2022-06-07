@@ -1,7 +1,7 @@
 const express = require('express');
 const https = require('https');
-//const fetch = require('node-fetch');
-const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
+const fetch = require('node-fetch');
+//const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 const app = express()
 const port = 3000
 //var request = require('request');
