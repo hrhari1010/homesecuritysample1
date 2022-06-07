@@ -5,6 +5,9 @@ const port = 3000
 app.get('/', (req, res) => {
   res.send('listening and success')
 })
+app.get('/senddata', (req, res) => {
+  res.send('sending data')
+})
 
 app.listen(process.env.PORT || port, () => {
   console.log(`Example app listening on port ${port}`)
